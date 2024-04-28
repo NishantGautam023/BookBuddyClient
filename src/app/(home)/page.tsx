@@ -9,13 +9,16 @@ export default async function Home() {
 
 
   return (
-      <>
-     <Banner />
-          <Suspense fallback={<Loading />}>
-              <BookList  />
-          </Suspense>
 
-      </>
+          <div className="container  min-h-screen">
+              {/*<Banner />*/}
+              <Suspense fallback={<Loading />}>
+                  <BookList  />
+              </Suspense>
+          </div>
+
+
+
   )
 }
 
