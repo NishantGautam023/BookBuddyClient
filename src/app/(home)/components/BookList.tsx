@@ -1,12 +1,17 @@
 import {Book} from "@/types";
 import React from "react";
 
+import BookCard from "@/app/(home)/components/BookCard";
+
 
 const BookList = ({books} : {books: Book[]} ) => {
     return (
-        <div>
-            {/*{books.map((book) => <h1 key={book.id}>{book.title}</h1>)}*/}
-            Hello Sippy
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 max-w-7xl mx-auto">
+            {books.map((book) => (
+                <BookCard key ={book._id} book = {book}  />
+            ))}
+
+
         </div>
     )
 }

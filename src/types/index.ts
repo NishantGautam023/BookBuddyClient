@@ -1,13 +1,12 @@
-export interface Book {
-    id: string,
-    title: string,
-    description: string,
-    coverImage: string,
-    file: string,
+export type Book = {
+    _id: string;
+    title: string;
+    description: string;
+    coverImage: string;
+    file: string;
     author: Author;
-}
-
+};
 
 export type Author = {
-    name: string,
-}
+    name: string;
+};
