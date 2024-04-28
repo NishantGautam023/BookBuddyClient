@@ -9,7 +9,7 @@ export default function BookCard({book}: { book: Book }) {
     return (
         <>
 
-            <div className="container grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-8">
+            <div className="">
                 <div className="item">
                     <Image src={book.coverImage} sizes="100vw" alt={book.title} width={400} height={300} />
                     <div>
