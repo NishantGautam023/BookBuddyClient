@@ -3,8 +3,8 @@ const nextConfig = {
     images: {
        remotePatterns: [{
            protocol: 'https',
-           // hostname: 'res.cloudinary.com'
-           hostname: 'picsum.photos',
+           hostname: 'res.cloudinary.com',
+           // hostname: 'picsum.photos',
        }]
     }
 };

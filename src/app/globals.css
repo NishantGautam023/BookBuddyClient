@@ -75,7 +75,7 @@
     p {
         @apply mt-4 mb-3;
     }
-    a {
+    .anchor {
         @apply text-lg font-bold text-purple-600;
     }
 }

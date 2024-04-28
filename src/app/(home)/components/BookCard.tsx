@@ -11,65 +11,19 @@ export default function BookCard({book}: { book: Book }) {
 
             <div className="container grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-8">
                 <div className="item">
-                    <Image src="https://picsum.photos/400/300" alt="" width={300} height={400}/>
+                    <Image src={book.coverImage} sizes="100vw" alt={book.title} width={400} height={300} />
                     <div>
-                        <h2>Blog title 1</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda porro inventore
-                            repellendus
-                            ipsum.</p>
-                        <Link href="#">Read more</Link>
+                        <h2>{book.title}</h2>
+                        <p>{book.author.name}</p>
+                        <Link className='anchor' href={`/book/${book._id}`}>Read more</Link>
                     </div>
                 </div>
-                <div className="item">
-                    <Image src="https://picsum.photos/400/300?1" alt="" width={300} height={400}/>
-                    <div>
-                        <h2>Blog title 2</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda porro inventore
-                            repellendus
-                            ipsum.</p>
-                        <Link href="#">Read more</Link>
-                    </div>
-                </div>
-                <div className="item">
-                    <Image src="https://picsum.photos/400/300?2" alt="" height={400} width={400}/>
-                    <div className="desc">
-                        <h2>Blog title 3</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda porro inventore
-                            repellendus
-                            ipsum.</p>
-                        <Link href="#">Read more</Link>
-                    </div>
-                </div>
-                <div className="item">
-                    <Image src="https://picsum.photos/400/300?3" alt="" width={300} height={400}/>
-                    <div className="desc">
-                        <h2>Blog title 4</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda porro inventore
-                            repellendus
-                            ipsum.</p>
-                        <Link href="#">Read more</Link>
-                    </div>
-                </div>
-                <div className="item">
-                    <Image src="https://picsum.photos/400/300?4" alt="" width={300} height={400}/>
-                    <div className="desc">
-                        <h2>Blog title 5</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda porro inventore
-                            repellendus
-                            ipsum.</p>
-                        <Link href="#">Read more</Link>
-                    </div>
-                </div>
-                <div className="item">
-                    <Image src="https://picsum.photos/400/300?5" alt="" width={300} height={400}/>
-                    <div className="desc">
-                        <h2>Blog title 6</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda porro inventore
-                            repellendus
-                            ipsum.</p>
-                        <Link href="#">Read more</Link>
-                    </div>
-                </div>
+
+
+
+
+
+
             </div>
 
 
