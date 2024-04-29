@@ -11,7 +11,7 @@ export default async function Home() {
   return (
 
           <div className="container  min-h-screen">
-              {/*<Banner />*/}
+              <Banner />
               <Suspense fallback={<Loading />}>
                   <BookList  />
               </Suspense>
