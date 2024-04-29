@@ -2,36 +2,6 @@
 import Link from 'next/link';
 import React from 'react';
 
-// const Navbar = () => {
-//     return (
-//         <nav className="border-b">
-//             <div className="max-w-7xl mx-auto flex items-center justify-between py-4">
-//                 <div>
-//                     <Link href={'/'}>
-//                         <div className="flex items-center gap-1">
-//                             <div className="relative">
-//                                 <BookIcon />
-//                             </div>
-//                             <span className="text-xl font-bold uppercase tracking-tight text-primary-500">
-//                                 Book Buddy
-//                             </span>
-//                         </div>
-//                     </Link>
-//                 </div>
-//                 <div className="flex items-center gap-4">
-//                     <button
-//                         className="h-10 rounded-md border border-primary-500 px-4 py-2 text-sm font-medium text-primary-500 transition-all hover:border-primary-100 hover:bg-primary-100 active:border-primary-200 active:bg-primary-200">
-//                         Sign in
-//                     </button>
-//                     <button
-//                         className="h-10 rounded-md bg-primary-500 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-primary-600 active:bg-primary-700">
-//                         Sign up
-//                     </button>
-//                 </div>
-//             </div>
-//         </nav>
-// );
-// };
 
 
 const Navbar = () => {
@@ -44,20 +14,23 @@ const Navbar = () => {
                 </div>
 
             </Link>
+            <span className="text-xl font-bold uppercase tracking-tight text-primary-500 m-2.5">
+                               Book Buddy
+                            </span>
             <ul className="order-last flex-[100%] mt-4 md:order-none md:flex-auto md:mt-0">
                 <li>
-                <Link href="#">
-                    <div>Home</div>
+                    <Link href={'/'}>
+                        <div>Home</div>
                     </Link>
                 </li>
                 <li>
-                    <Link href="#">
+                    <Link href={'/'}>
                         <div>About Us</div>
                     </Link>
                 </li>
                 <li>
-                    <Link href="#">
-                        <div>Pricing</div>
+                    <Link href={'/'}>
+                        <div>library</div>
                     </Link>
                 </li>
             </ul>
@@ -69,9 +42,8 @@ const Navbar = () => {
 };
 
 
-
 const BookIcon = () => (
-    <svg height="45"  width="45" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <svg height="45" width="45" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
         <g id="Page-1" fill="none" fill-rule="evenodd">
             <g id="002---Open-Book" fill-rule="nonzero">
                 <path id="Rectangle-path" d="m26 29h8v20h-8z" fill="#c81e1e"/>

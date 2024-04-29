@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import bannerImg from '/public/bannerImg.png';
-import plainImg from '/public/plain-book.jpg'
+import bannerImg from '/public/bookShare.svg';
+import plainImg from '/public/plain.jpeg'
 const Banner = () => {
     return (
         <div className="mx-auto max-w-7xl py-10">
@@ -24,7 +24,7 @@ const Banner = () => {
                     sizes="100vw"
                     style={{ width: 'auto', height: '18rem' }}
                 />
-                <h3 className="absolute left-10 top-1/2 w-full max-w-3xl -translate-y-1/2 text-5xl font-semibold tracking-tight text-orange-50">
+                <h3 className="absolute left-10 top-1/2 w-full max-w-3xl -translate-y-1/2 text-5xl font-semibold tracking-tight text-blue-950">
                     Connect, Share and Trade Your Favourite Reads...
                 </h3>
             </div>

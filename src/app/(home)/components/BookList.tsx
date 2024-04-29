@@ -9,7 +9,7 @@ const BookList = async ( ) => {
 
     const response  = await fetch(`${process.env.BACKEND_URL}/api/books`)
 
-// Since we did a network request, then error handling is very important.
+
 
     if(!response.ok) {
         throw new Error("An error occurred while fetching the books API")

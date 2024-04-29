@@ -4,7 +4,7 @@ import { Book } from '@/types';
 import DownloadButton from "@/app/book/[bookId]/components/DownloadButton";
 
 
-// The params we're getting as a prop,
+
 const SingleBookPage = async ({ params }: { params: { bookId: string } }) => {
     console.log('params', params);
     let book: Book | null = null;
