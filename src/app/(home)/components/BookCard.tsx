@@ -2,7 +2,6 @@
 import {Book} from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import {Suspense} from "react";
 
 
 
@@ -20,11 +19,11 @@ export default function BookCard({book}: { book: Book }) {
                     <div>
                         <h2>{book.title}</h2>
                         <p>{book.author.name}</p>
-                            <Suspense fallback={'Loading...'}>
+
                                 <Link className='anchor py-1 px-2 rounded border border-primary-500 mt-4 inline-block text-primary-500 font-medium text-sm*/}
                              hover:border-primary-100 hover:bg-primary-100 transition'  href={`/book/${book._id}`}>Read more
                                 </Link>
-                            </Suspense>
+
 
 
 
