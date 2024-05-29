@@ -11,7 +11,7 @@ Book Buddy is a web application designed to help book enthusiasts discover, shar
 - View a catalog of books
 - Search for books by title, author, or genre 🔜
 - View detailed information about each book
-- User authentication and authorization 🔜
+- User authentication and authorization 
 - Trade and share books with other users 🔜
 
 ## Technologies Used
