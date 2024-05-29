@@ -42,7 +42,7 @@ const Navbar = () => {
             </ul>
             <span className="flex-1 text-right">
                 <SignedOut>
-          <SignInButton className="btn" />
+          <SignInButton />
         </SignedOut>
 
         <SignedIn>
