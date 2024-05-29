@@ -30,6 +30,11 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+      require('daisyui')
+  ],
+  daisyui: {
+    themes: ["cupcake"],
+  },
 };
 export default config;

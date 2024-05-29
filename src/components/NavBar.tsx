@@ -2,7 +2,13 @@
 import Link from 'next/link';
 import React from 'react';
 
-
+import {
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton
+}
+from '@clerk/nextjs'
 
 const Navbar = () => {
     return (
@@ -35,7 +41,13 @@ const Navbar = () => {
                 </li>
             </ul>
             <span className="flex-1 text-right">
-                <button className="btn">Join us</button>
+                <SignedOut>
+          <SignInButton />
+        </SignedOut>
+
+        <SignedIn>
+          <UserButton showName />
+        </SignedIn>
             </span>
         </header>
     );
