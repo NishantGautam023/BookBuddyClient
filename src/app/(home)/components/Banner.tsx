@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import bannerImg from '/public/bookShare.svg';
 import plainImg from '/public/plain.jpeg'
+import Carousel from "@/app/(home)/components/Carousel";
+
 const Banner = () => {
     return (
         <div className="mx-auto max-w-7xl py-10">
@@ -27,6 +29,7 @@ const Banner = () => {
                 <h3 className="absolute left-10 top-1/2 w-full max-w-3xl -translate-y-1/2 text-5xl font-semibold tracking-tight text-blue-950">
                     Connect, Share and Trade Your Favourite Reads...
                 </h3>
+
             </div>
         </div>
     );
