@@ -1,46 +1,44 @@
+
 # Book Buddy Client
 
-This is the client version of the Book Buddy app. It interacts with the BookBuddyAPI to fetch data related to books.
+This is the client version of the **Book Buddy** app. It interacts with the **BookBuddyAPI** to fetch and display book-related data, providing users with a seamless interface for book discovery, sharing, and trading.
 
 ## Overview
 
-Book Buddy is a web application designed to help book enthusiasts discover, share, and trade their favorite reads. The client version of the app provides a user-friendly interface for interacting with the BookBuddyAPI, which serves as the backend to manage book-related data.
+**Book Buddy** is a web application designed for book enthusiasts to discover, share, and trade their favorite reads. The client-side application is built to deliver a user-friendly experience, allowing users to interact with the backend **BookBuddyAPI** efficiently.
 
 ## Features
 
 - View a catalog of books
-- Search for books by title, author, or genre 🔜
+- Search for books by title, author, or genre 🔜 (Upcoming Feature)
 - View detailed information about each book
-- User authentication and authorization 
-- Trade and share books with other users 🔜
+- User authentication and authorization
+- Trade and share books with other users 🔜 (Upcoming Feature)
 
 ## Technologies Used
 
-- React.js: A JavaScript library for building user interfaces
-- Next.js: A React framework for building server-side rendered and statically generated web applications
-- Tailwind CSS: A utility-first CSS framework for quickly styling web applications
+- **React.js**: JavaScript library for building user interfaces
+- **Next.js**: React framework for server-side rendering and static site generation
+- **Tailwind CSS**: Utility-first CSS framework for styling web applications
 
+## Subprojects Included
 
-## Getting Started
+The Book Buddy app is divided into three key subprojects, each responsible for different aspects of the system. These subprojects are maintained independently, and they communicate via API calls between the frontend (Dashboard and ClientJS) and the backend (REST API).
 
-To run the Book Buddy client locally, follow these steps:
+### 1. [REST API](https://github.com/NishantGautam023/BookBuddyAPI)
 
-1. Clone this repository to your local machine.
-2. Install dependencies using `npm install` or `yarn install`.
-3. Set up environment variables required for the client to connect to the BookBuddyAPI.
-4. Run the client application using `npm run dev` or `yarn dev`.
-5. Open your web browser and navigate to `http://localhost:3000` to view the app.
+- **Description**: This backend service handles all the business logic and interactions between the client and the database. It includes features like user authentication, data CRUD operations, and API endpoints.
+- **Technologies**: Node.js, Express, MongoDB
+- **Repository**: [REST API GitHub Repository](https://github.com/NishantGautam023/BookBuddyAPI)
 
-## Contributing
+### 2. [Dashboard (Admin Panel)](https://github.com/NishantGautam023/BookBuddyDashboard)
 
-Contributions to the Book Buddy client are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+- **Description**: The admin panel allows administrators to manage content, users, and system settings. It’s built with SHADCN and Next.js, offering a modern, responsive interface.
+- **Technologies**: Next.js, SHADCN, Tailwind CSS
+- **Repository**: [Dashboard GitHub Repository](https://github.com/NishantGautam023/BookBuddyDashboard)
 
-## License
+### 3. [ClientJS (Client View)](https://github.com/NishantGautam023/BookBuddyClient)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- The BookBuddyAPI team for providing the backend services.
-- The open-source community for creating the tools and libraries used in this project.
-
+- **Description**: The client-side front-end allows users to interact with the system. It’s built with React and TanStack to provide a smooth user experience for browsing and trading books.
+- **Technologies**: React, TanStack
+- **Repository**: [ClientJS GitHub Repository](https://github.com/NishantGautam023/BookBuddyClient)
